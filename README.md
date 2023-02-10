@@ -23,6 +23,5 @@
 
 - Prepare Laravel Environment on your laptop/pc.
 - On your local web serve (e.g. xampp) create a new database name it rokkit_db.
-- import the sql file on created dabase create some information like other blog posts and other users also category.
 - Open the rokkit blog app in terminal and run migrate to load the table
-- then start the project (php artisan serve)
+- then run the project (php artisan serve)
