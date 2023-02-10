@@ -1,0 +1,336 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+body{
+    background-color: #000;
+    font-family: 'Open Sans', sans-serif;
+    color: #fff;
+    position: relative;
+}
+a:hover{
+    text-decoration: none;
+}
+input:focus, textarea:focus{
+    box-shadow: none;
+    outline: none;
+}
+.body-section{
+    margin-top: 40px;
+}
+
+.theme-btn{
+    background-color: #A91E22;
+    color: #fff;
+    border: 2px solid #A91E22;
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+.theme-btn:hover{
+    background-color: transparent;
+    color: #A91E22;
+}
+/* Input */
+.input-container{
+    margin-bottom: 30px;
+}
+.input-container input, .input-container textarea, .input-container select{
+    background-color: transparent;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    color: #fff;
+    padding: 10px 10px;
+    width: 100%;
+}
+.input-container select{
+    background-color: #1D1B1B;
+}
+/* .input-container select{
+    width: 100%;
+    background-color: #1D1B1B;
+    color: #fff;
+    border: none;
+    padding: 10px 10px;
+} */
+.thumbnail-container .img-preview-container{
+    height: 130px;
+    width: 100%;
+    border-radius: 5px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+    margin-top: 10px;
+}
+.thumbnail-container .img-preview-container img{
+    width: auto;
+    height: 100%;
+}
+/* alert notifications */
+.notification-container {
+    position: fixed;
+    left: 50%;
+    z-index: 999999;
+    top: 90px;
+    transform: translateX(-50%);
+}
+.alert {
+    display: none;
+}
+.alert.show{
+    display: block;
+}
+.notification {
+    width: 200px;
+    height: 50px;
+    background-color: green;
+}
+/* add new blog modal */
+.modal-content{
+    background-color: #1D1B1B;
+}
+.modal-header, .modal-footer{
+    border: none;
+}
+#addNewBlog .modal-header .close{
+    color: #fff;
+}
+#addNewBlog .modal-body{
+    padding: 0px 30px;
+}
+#addNewBlog .modal-body h4{
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+#addNewBlog .modal-footer{
+    padding: 0px 30px 30px 30px;
+}
+/* Heading */
+.heading h1{
+    font-size: 35px;
+    text-transform: uppercase;
+    text-align: center;
+}
+/* Navigation bar */
+nav .nav-wrap{
+    display: flex;
+}
+nav .nav-wrap .compony-logo-container{
+    width:130px;
+    padding: 10px 0px;
+}
+nav .nav-wrap .link-container{
+    display: inline-flex;
+    align-items: center;
+    margin: auto;
+}
+nav .nav-wrap .link-container ul{
+    padding: 0;
+    list-style: none;
+}
+nav .nav-wrap .link-container ul li.active a{
+    color: #A91E22;
+}
+nav .nav-wrap a{
+    color: #fff;
+    display: inline-flex;
+}
+nav .nav-wrap .login-register-menu-container{
+    display: inline-flex;
+    align-items: center;
+}
+nav .nav-wrap .login-register-menu-container .login-register{
+    position: relative;
+}
+nav .nav-wrap .login-register-menu-container .login-register a{
+    cursor: pointer;
+}
+nav .nav-wrap .login-register-menu-container .login-register i{
+    font-size: 25px;
+    margin-right: 5px;
+}
+nav .nav-wrap .login-register-menu-container .loggedIn.login-register::after{
+    content: "\e874";
+    font-family: 'Linearicons-Free';
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    margin-left: 5px;
+}
+nav .nav-wrap .login-register-menu-container .login-register .drop-down-links-container{
+    position: absolute;
+    margin-top: 10px;
+    right: 0;
+    z-index: 999;
+    display: none;
+}
+nav .nav-wrap .login-register-menu-container .login-register .drop-down-links-container.show{
+    display: block;
+}
+nav .nav-wrap .login-register-menu-container .login-register .drop-down-links-container ul{
+    list-style: none;
+    background-color: #1D1B1B;
+    padding: 15px 2px;
+    border-radius: 5px;
+    width: 160px;
+}
+nav .nav-wrap .login-register-menu-container .login-register .drop-down-links-container ul li{
+    padding: 5px 15px;
+}
+nav .nav-wrap .login-register-menu-container .login-register .drop-down-links-container ul li:hover{
+    background-color: #000;
+}
+/* Blog card */
+.each-blog-container{
+    background-color: #1D1B1B;
+    border-radius: 8px;
+    overflow: hidden;
+    height: 100%;
+}
+.each-blog-container .img-container{
+    width: 100%;
+    height: 240px;
+    background-color: #fff;
+    border-radius: 8px;
+}
+.each-blog-container .blog-info-container{
+    padding: 20px;
+}
+.each-blog-container .blog-info-container h2{
+    font-size: 25px;
+    line-height: 1.2;
+    text-transform: capitalize;
+}
+.each-blog-container .blog-info-container .publish-info .each-info{
+    color: #A91E22;
+    margin: 0px 10px;
+}
+.each-blog-container .blog-info-container .publish-info .each-info:first-child{
+    margin-left: 0px;
+}
+.each-blog-container .blog-info-container .publish-info{
+    display: flex;
+    margin-bottom: 15px;
+}
+.each-blog-container .blog-info-container .category-container{
+    margin-bottom: 20px;
+}
+.each-blog-container .blog-info-container .category-container a{
+    border: 1px solid #fff;
+    border-radius: 5px;
+    padding: 5px 10px;
+    color: #fff;
+}
+/* ===================================
+home page 
+========================================*/
+.filter-container{
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+.filter-container .input-container select, .filter-container .input-container input{
+    width: 100%;
+    background-color: #1D1B1B;
+    color: #fff;
+    border: none;
+    height: calc(2.25rem + 10px);
+}
+/* ===================================
+Login page 
+========================================*/
+.login-section .login-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.login-section .login-wrap{
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+.login-section .login-wrap .login-register-form-container{
+    background-color: #1D1B1B;
+    border-radius: 5px;
+    padding: 70px 40px;
+    margin: auto;
+    margin-top: 40px;
+}
+.login-section .login-wrap .login-register-form-container .input-container:last-child{
+    margin-bottom: 10px;
+}
+.login-section .login-wrap .login-register-form-container .forget-password{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+.login-section .login-wrap .login-register-form-container a{
+    color: #A91E22;
+}
+.login-section .login-wrap .login-register-form-container button.theme-btn{
+    margin: 20px 0px;
+}
+/* ===================================
+Register page 
+========================================*/
+.register-section .register-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.register-section .register-wrap{
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+.register-section .register-wrap .login-register-form-container{
+    background-color: #1D1B1B;
+    border-radius: 5px;
+    padding: 70px 40px;
+    margin: auto;
+    margin-top: 40px;
+}
+.register-section .register-wrap .login-register-form-container a{
+    color: #A91E22;
+}
+.register-section .register-wrap .login-register-form-container button.theme-btn{
+    margin: 20px 0px;
+}
+/* ==================
+My blog page style
+================*/
+#addNewBlog .input-container, #editBlog .input-container{
+    margin-bottom: 15px;
+}
+/* ==================
+Preview page style
+================*/
+.thumnail-blog-info-container .thumnail-container{
+    border-radius: 5px;
+    overflow: hidden;
+}
+.content-container{
+    position: relative;
+}
+.content-container .category-container a{
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    padding: 5px 15px;
+}
+.content-container .upper-content-container h1{
+    margin-top: 25px;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+.thumnail-blog-info-container .publish-info .each-info{
+    color: #A91E22;
+    font-size: 20px;
+    margin: 0px 10px;
+}
+.thumnail-blog-info-container .publish-info .each-info:first-child{
+    margin-left: 0px;
+}
